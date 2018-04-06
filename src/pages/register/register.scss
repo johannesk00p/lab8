@@ -1,0 +1,17 @@
+page-register {
+    .bg-image {
+        background-image: url('../assets/imgs/p5.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    ion-item, ion-label, ion-list, ion-input, ion-content{
+        background-color: transparent;
+
+    }
+
+    ion-list{
+        background-color: blue;
+    }
+}

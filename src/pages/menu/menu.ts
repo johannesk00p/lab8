@@ -1,6 +1,7 @@
 import { Tab2Page } from './../tab2/tab2';
 import { Tab1Page } from './../tab1/tab1';
 import { TabsPage } from './../tabs/tabs';
+import { HomePage } from './../home/home';
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, Nav } from 'ionic-angular';
  
@@ -25,8 +26,11 @@ export class MenuPage {
   @ViewChild(Nav) nav: Nav;
  
   pages: PageInterface[] = [
-    { title: 'List', pageName: 'TabsPage', tabComponent: 'Tab1Page', index: 0, icon: 'home' },
+    { title: 'Home', pageName: 'TabsPage', tabComponent: 'Tab1Page', index: 0, icon: 'home' },
     { title: 'About', pageName: 'TabsPage', tabComponent: 'Tab2Page', index: 1, icon: 'contacts' },
+    { title: 'List', pageName: 'ListPage', tabComponent: 'ListPage', index: 2, icon: 'bowtie' },
+    { title: 'Vote', pageName: 'VotePage', tabComponent: 'VotePage', index: 3, icon: 'heart' },
+    { title: 'Locate', pageName: 'LocatePage', tabComponent: 'LocatePage', index: 4, icon: 'globe' },
     
   ];
  
@@ -66,6 +70,10 @@ export class MenuPage {
       return 'primary';
     }
     return;
+  }
+
+  signOut() {
+  	this.navCtrl.push(HomePage);
   }
  
 }

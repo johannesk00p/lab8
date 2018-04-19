@@ -7,7 +7,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
-import { WelcomePage } from '../pages/welcome/welcome'
+import { WelcomePage } from '../pages/welcome/welcome';
+//import { Tab1Page } from '../pages/tab1/tab1';
 
 import { MenuPage } from '../pages/menu/menu';
 import { RegisterPage } from '../pages/register/register';
@@ -36,6 +37,7 @@ const firebaseConfig = {
     LoginPage,
     RegisterPage,
     WelcomePage,
+    //Tab1Page,
    
     MenuPage,
     
@@ -57,6 +59,7 @@ const firebaseConfig = {
     RegisterPage,
     WelcomePage,
     MenuPage,
+    //Tab1Page,
     
   ],
   providers: [

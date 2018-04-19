@@ -4,6 +4,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { WelcomePage } from '../pages/welcome/welcome';
+//import { Tab1Page } from '../pages/tab1/tab1';
+
 @Component({
   templateUrl: 'app.html'
 })
